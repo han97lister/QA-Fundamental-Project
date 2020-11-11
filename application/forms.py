@@ -21,3 +21,5 @@ class MethodForm( FlaskForm ) :
     time = TimeField( 'Estimated time', format='%H:%M' )
     submit = SubmitField( 'Add Method' )
 
+#class RecipeForm( FlaskForm ) :
+

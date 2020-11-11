@@ -1,7 +1,8 @@
 {% extends 'layout.html' %}
 {% block body_content %}
 
-{{ all_recipes }}
+{% for recipe in all_recipes %}
+{{ all_recipes.name }}
 
 {% endblock body_content %}
 
