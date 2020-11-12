@@ -2,14 +2,7 @@
 {% block body_content %}
 
 	{% for recipe in all_recipes %}
-		{{ recipe }}
-
-		<form action='{{ url_for('update', id=recipe.id) }}'>
-		<input type=submit value="Change">
-            	</form>
-            	<form action='{{ url_for('delete', id=recipe.id) }}'>
-            	<input type=submit value="Delete">
-            	</form>
+		{{ all_recipes }}
 		<br>
 	{% endfor %}
 
