@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectField, TextAreaField, TimeField
+from wtforms import StringField, SubmitField, SelectField, TextAreaField
 from wtforms.validators import DataRequired, ValidationError
+from wtforms.ext.sqlalchemy.fields import QuerySelectField
 
 from application.models import Ingredients, Method, Recipe
 
@@ -13,13 +14,26 @@ class IngredientsForm( FlaskForm ) :
     submit = SubmitField( 'Add ingredient' )
 
 class MethodForm( FlaskForm ) :
-    steps = TextAreaField( 'Method',
+    steps = TextAreaField( 'Steps',
         validators = [
             DataRequired()
         ]
     )
-    time = TimeField( 'Estimated time', format='%H:%M' )
+    time = StringField( 'Estimated time' )
     submit = SubmitField( 'Add Method' )
-
-#class RecipeForm( FlaskForm ) :
+    
+class RecipeForm( FlaskForm ) :
+    name = StringField( 'Name',
+        validators = [
+            DataRequired()
+        ]
+    )
+    ingredient_id = SelectField('Choose Ingredients', choices=[])
+    quantity = StringField( 'Enter the quantities',
+        validators = [
+            DataRequired()
+        ]
+    )
+    method_id = SelectField('Choose Method', choices=[])
+    submit = SubmitField( 'Complete Recipe' )
 

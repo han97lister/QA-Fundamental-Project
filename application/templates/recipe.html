@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+<h2> Complete Recipe </h2>
+
+    <form action='' method='POST'>
+        {{ form.hidden_tag() }}
+
+        {{ form.name.label }} {{ form.name }} 
+	<br>
+        {% if form.name.errors %}
+            {% for error in form.name.errors %}
+                {{ error }}<br>
+            {% endfor %}
+        {% endif %}
+	
+	<br>
+
+	{{ form.ingredient_id.label }} {{ form.ingredient_id }} 
+	
+	<br>
+
+	{{ form.quantity.label }} {{ form.quantity }}
+
+	<br>
+
+	{{ form.method_id.label }} {{ form.method_id }}
+
+	<br>
+        {{ form.submit }}
+    </form>
+
+{% endblock body_content %}
+

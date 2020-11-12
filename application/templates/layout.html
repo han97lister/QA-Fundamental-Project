@@ -1,8 +1,13 @@
 <html>
 	<body>
 		<h1>Recipe App</h1>
-		<a href="{{url_for('index')}}">Home</a>
-		<a href="{{url_for('addIn')}}">Add Ingredients</a>
+		<a href="{{url_for('index')}}">Home</a><br>
+		<a href="{{url_for('ingredients')}}">All Ingredients</a><br>
+		<a href="{{url_for('addIn')}}">Add Ingredient</a><br>
+		<a href="{{url_for('methods')}}">Add Method</a>
+		<a href="{{url_for('recipes')}}">Add Recipe</a>
+
+		<br><br>
 
 		{% block body_content %}
 		{% endblock body_content %}

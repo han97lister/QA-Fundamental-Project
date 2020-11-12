@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+<h3> Add a Method </h3>
+
+<form method='POST' action=''>
+	{{ form.hidden_tag() }}
+	{{ form.steps.label }} {{ form.steps }}
+	{% if form.steps.errors %}
+		{% for error in form.steps.errors %}
+			{{ error }}
+		{% endfor %}
+	{% endif %}
+	<br>
+	{{ form.time.label }} {{ form.time }}
+	{% if form.time.errors %}
+                {% for error in form.time.errors %}
+                        {{ error }}
+                {% endfor %}
+        {% endif %}
+	<br>
+	{{ form.submit }}
+</form>
+
+{% endblock body_content %}

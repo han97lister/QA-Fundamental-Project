@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+
+{% for ingredient in all_ingredients %}
+	<br>
+	{{ ingredient.name }}
+	<br>
+{% endfor %}
+
+{% endblock body_content %}

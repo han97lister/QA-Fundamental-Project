@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block body_content %}
+<h4> All Methods </h4>
+{% for method in new_method %}
+        <br>
+        {{ method.steps }}
+	<br>
+	{{ method.time }}
+        <br>
+{% endfor %}
+
+{% endblock body_content %}
