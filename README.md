@@ -6,4 +6,4 @@
 * Trello Board: https://trello.com/b/8zRp5ZJX/recipe-project
 * Website:
 
-### *Brief*
+### **Brief**
