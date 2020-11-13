@@ -25,8 +25,11 @@ I decided to base my application on recipes as cooking is a big hobby of mine. I
 ### **Architecture** 
 
 #### **Database Structure**
-My final entity relationship diagram (ERD) illustrates the tables within my application and their many-to-many relationships
-![Pipeline](C:\Users\Hannah\QA\Project\CI_Pipeline)
+My final entity relationship diagram (ERD) illustrates the tables within my application and their many-to-many relationships:
+![Final_ERD](C:\Users\Hannah\QA\Project\Final_ERD.PNG)
 
+#### **CI Pipeline**
+The CI Pipeline for my application:
+![CI_Pipeline](C:\Users\Hannah\QA\Project\CI_Pipeline.PNG)
 
 ### **Project Tracking**
