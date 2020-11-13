@@ -15,10 +15,12 @@ I decided to base my application on recipes as cooking is a big hobby of mine. I
 * Create an ingredients list that stores just the name.
 * Create a method that stores the steps to a recipe, as well as the expected time duration.
 * Create a recipe that stores:
- * The name of the recipe
- * The essential ingredients provided by the ingredients list
- * The relevant quantity for each ingredient
- * The relevant method for the recipe - provided by the method database
+  * The name of the recipe
+  * The essential ingredients provided by the ingredients list
+  * The relevant quantity for each ingredient
+  * The relevant method for the recipe - provided by the method database
 * View recipes posted
 * Update or Delete recipes
 
+### **Architecture** 
+### **Project Tracking**
