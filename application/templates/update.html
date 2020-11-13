@@ -1,15 +1,22 @@
 {% extends 'layout.html' %}
 {% block body_content %}
 
-    <form action='' method='POST'>
+    <form method='POST' action=''>
         {{ form.hidden_tag() }}
-        {{ form.task }}
+        {{ form.name.label }} {{ form.name }}
 	<br>
         {% if form.name.errors %}
             {% for error in form.name.errors %}
-                {{ error }}<br>
+                {{ error }}
             {% endfor %}
         {% endif %}
+	<br>
+	{{ form.ingredient_id.label }} {{ form.ingredient_id }}
+	<br>
+	{{ form.quantity.label }} {{ form.quantity }}
+	<br>
+	{{ form.method_id.label }} {{ form.method_id }}
+	<br>
         {{ form.submit }}
     </form>
 

@@ -19,8 +19,8 @@ def addIn() :
     form = IngredientsForm()
     if form.validate_on_submit() :
         ingredient = Ingredients(
-            name = form.name.data
-            )
+             name = form.name.data
+        )
         db.session.add(ingredient)
         db.session.commit()
         return redirect( url_for('ingredients') )
@@ -69,17 +69,41 @@ def recipes() :
             )
         db.session.add(recipes)
         db.session.commit()
-        return redirect( url_for('index'))
+        return redirect(url_for('index'))
     return render_template('recipe.html', form=form)
 
-@app.route('/recipe/<int:id>', methods=['GET', 'POST'])
-def update(id):
-    form = RethodForm()
-    recipe = Recipe.query.get(id)
+@app.route('/update/<int:recipe_id>', methods=['GET', 'POST'])
+def update(recipe_id):
+    form = RecipeForm()
+    recipe_update = Recipe.query.get(recipe_id)
+    
+    ingredients=Ingredients.query.all()
+    choices =[]
+    for ingredient in ingredients :
+        choices.append((ingredient.id, ingredient.name))
+    form.ingredient_id.choices=choices
+
+    methods=Method.query.all()
+    choices=[]
+    for method in methods :
+        choices.append((method.id, method.steps))
+    form.method_id.choices=choices
+
     if form.validate_on_submit() :
-        recipe.name = form.name.data
+        recipe_update.name = form.name.data
+        recipe_update.ingredient_id = form.ingredient_id.data
+        recipe_update.quantity = form.quantity.data
+        recipe_update.method_id = form.method_id.data
+        db.session.add(recipe_update)
         db.session.commit()
-        return redirect( url_for('recipe.html'))
+        return redirect(url_for('index'))
     elif request.method == 'GET':
-        form.name.data = recipe.name
+        form.name.data = recipe_update.name
     return render_template('update.html', title = "Update your recipe", form=form)
+
+@app.route('/delete/<int:recipe_id>')
+def delete(recipe_id):
+    recipe_delete = Recipe.query.get(recipe_id)
+    db.session.delete(recipe_delete)
+    db.session.commit()
+    return redirect(url_for('index'))
