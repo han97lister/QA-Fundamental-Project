@@ -23,4 +23,10 @@ I decided to base my application on recipes as cooking is a big hobby of mine. I
 * Update or Delete recipes
 
 ### **Architecture** 
+
+#### **Database Structure**
+My final entity relationship diagram (ERD) illustrates the tables within my application and their many-to-many relationships
+![Pipeline](C:\Users\Hannah\QA\Project\CI_Pipeline)
+
+
 ### **Project Tracking**
