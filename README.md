@@ -4,7 +4,7 @@
 ### **Resources**
 * Presentation: https://docs.google.com/presentation/d/1E7wdMY3jFwsYQxpgYA3c2mv1r2Pufd_a_nhDwjqJK-k/edit#slide=id.ga9936a0ad4_0_5
 * Trello Board: https://trello.com/b/8zRp5ZJX/recipe-project
-* Website:
+* Website: http://35.242.141.26:5000/
 
 ### **Brief**
 For this project, I had the objective of creating a web application that can create, read, update and delete (CRUD) as well as implement other methodologies learnt throughout the training. Some of these include a Trello Board, a relation database, clear design phases illustrating the architecture and a CI Pipeline.
