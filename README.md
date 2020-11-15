@@ -31,7 +31,6 @@ My final entity relationship diagram (ERD) illustrates the tables within my appl
 #### **CI Pipeline**
 The CI Pipeline for my application:
 [Imgur](https://i.imgur.com/Zr9RNNB.jpg)
-![CI_Pipeline](https://imgur.com/Zr9RNNB)
 
 ### **Project Tracking**
 I chose to track my project using Trello and have attached a snapshot below.
@@ -56,7 +55,37 @@ Below is a screenshot of my application runnning through Gunicorn on Jenkins:
 [Imgur](https://i.imgur.com/sscnD5H.png)
 
 ### **Front-End Design**
-The front-end of the app is what the user sees and functions themself. I can included screenshots of how a user can navigate around my app, once it is running with the URL.
+The front-end of the app is what the user sees and functions themself. I have included screenshots of how a user can navigate around my app, once it is running with the URL.
+
+Initially you are directed to the home page which includes a list of the recipes that have been added:
+[Imgur](https://i.imgur.com/Ak3SQ7I.png)
+Here is the form for inputting ingredients which redirects to a list of all ingredients in the database:
+[Imgur](https://i.imgur.com/siMxzYS.png)
+[Imgur](https://i.imgur.com/nevWUhf.png)
+Here is the method form where users can input the steps and time expected and once submitted are redirected to a different method page:
+[Imgur](https://i.imgur.com/0VF53QK.png)
+[Imgur](https://i.imgur.com/Aqz6sQx.png)
+Here is where users can put together a recipe that calls on an ingredient from the database as well as a method: 
+[Imgur](https://i.imgur.com/tJGr4Dn.png)
+[Imgur](https://i.imgur.com/6hRpe8E.png)
+
+#### **Known Issues**
+There are a few problems with my current application:
+
+* When the user inputs a recipe, they are only able to select one ingredient which is problematic when trying to follow. However, the method does include all of the ingredients but ideally you could clearly see a list of them.
+
+### **Future Improvements**
+There are a number of improvements I would like to implement:
+
+* Fix the issue mentioned previously.
+* Allow people to specify cuisines so that users can get more information about a recipe they may not have seen before.
+* Implement the option to include an image so that users can visulise the food.
+* Improve the general look of my application with some colour.
+
+### **Author**
+
+Hannah Lister-Sims
+
 
 
 
