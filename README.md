@@ -43,5 +43,6 @@ The risk assessment I completed can be found here:
 https://docs.google.com/spreadsheets/d/15U51YRdiurGMEHM5TBIvR6X54iHQVbD6h4-d2rWDp7Y/edit?usp=sharing
 
 I have also included a screenshot here:
+![Risk_Assessment] (C:\Users\Hannah\QA\Project\Risk_assessment.PNG)
 
 
