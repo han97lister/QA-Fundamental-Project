@@ -30,7 +30,8 @@ My final entity relationship diagram (ERD) illustrates the tables within my appl
 
 #### **CI Pipeline**
 The CI Pipeline for my application:
-![CI_Pipeline](C:\Users\Hannah\QA\Project\CI_Pipeline.PNG)
+[Imgur](https://i.imgur.com/Zr9RNNB.jpg)
+![CI_Pipeline](https://imgur.com/Zr9RNNB)
 
 ### **Project Tracking**
 I chose to track my project using Trello and have attached a snapshot below.
@@ -53,4 +54,9 @@ As you can see, I have an 82% test coverage and these tests include running of t
 
 Below is a screenshot of my application runnning through Gunicorn on Jenkins:
 [Imgur](https://i.imgur.com/sscnD5H.png)
+
+### **Front-End Design**
+The front-end of the app is what the user sees and functions themself. I can included screenshots of how a user can navigate around my app, once it is running with the URL.
+
+
 
