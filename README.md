@@ -25,33 +25,33 @@ I decided to base my application on recipes as cooking is a big hobby of mine. I
 ### **Architecture** 
 
 #### **Database Structure**
-My final entity relationship diagram (ERD) illustrates the tables within my application and their many-to-many relationships:
+My final entity relationship diagram (ERD) illustrates the tables within my application and their many-to-many relationships:  
 [Imgur](https://i.imgur.com/MWoI9Uz.png)
 
 #### **CI Pipeline**
-The CI Pipeline for my application:
+The CI Pipeline for my application:  
 [Imgur](https://i.imgur.com/Zr9RNNB.jpg)
 
 ### **Project Tracking**
-I chose to track my project using Trello and have attached a snapshot below.
+I chose to track my project using Trello and have attached a snapshot below.  
 [Imgur](https://i.imgur.com/VmvJAbi.png)
 
 I seperated my Trello board into five sections to clearly track my progress and I did this by having a to-do, doing and done section as well as a user story section in order to always have a clear vision of my application and finally a product backlog which contained the brief.
 
 ### **Risk Assessment**
-The risk assessment I completed can be found here:
+The risk assessment I completed can be found here:  
 https://docs.google.com/spreadsheets/d/15U51YRdiurGMEHM5TBIvR6X54iHQVbD6h4-d2rWDp7Y/edit?usp=sharing
 
-I have also included a screenshot here:
+I have also included a screenshot here:  
 [Imgur](https://i.imgur.com/jwd9J1z.png)
 
 ### **Testing**
-I completed my unit-tests using pytest and ran it both in my virtual machine and through Gunicorn on Jenkins. These tests check that my application runs and the functions do what I'm expecting them too. Here is a screenshot of my test coverage:
+I completed my unit-tests using pytest and ran it both in my virtual machine and through Gunicorn on Jenkins. These tests check that my application runs and the functions do what I'm expecting them too. Here is a screenshot of my test coverage:  
 [Imgur](https://i.imgur.com/01hOs70.png)
 
 As you can see, I have an 82% test coverage and these tests include running of the application and valid submissions. Unfortunately, I am short of 100% coverage due to the fact I have not run tests on invalid submissions. For example, if I didn't input a name on the recipe form. Pytest is useful as it tells you which lines of code are not covered and so a future improvement will be for me to investigate these lines and implement tests for them.
 
-Below is a screenshot of my application runnning through Gunicorn on Jenkins:
+Below is a screenshot of my application runnning through Gunicorn on Jenkins:  
 [Imgur](https://i.imgur.com/sscnD5H.png)
 
 ### **Front-End Design**
