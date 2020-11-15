@@ -33,3 +33,15 @@ The CI Pipeline for my application:
 ![CI_Pipeline](C:\Users\Hannah\QA\Project\CI_Pipeline.PNG)
 
 ### **Project Tracking**
+I chose to track my project using Trello and have attached a snapshot below.
+![Trello_board](C:\Users\Hannah\QA\Project\Trello_board.PNG)
+
+I seperated my Trello board into five sections to clearly track my progress and I did this by having a to-do, doing and done section as well as a user story section in order to always have a clear vision of my application and finally a product backlog which contained the brief.
+
+### **Risk Assessment**
+The risk assessment I completed can be found here:
+https://docs.google.com/spreadsheets/d/15U51YRdiurGMEHM5TBIvR6X54iHQVbD6h4-d2rWDp7Y/edit?usp=sharing
+
+I have also included a screenshot here:
+
+
