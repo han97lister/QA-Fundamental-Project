@@ -26,12 +26,9 @@ I decided to base my application on recipes as cooking is a big hobby of mine. I
 
 #### **Database Structure**
 My final entity relationship diagram (ERD) illustrates the tables within my application and their many-to-many relationships:  
-![ERD]:https://imgur.com/q85KXTF
 [Imgur](https://i.imgur.com/MWoI9Uz.png)  
 
-Below are my previous ERDs so that you can see the progression of my application:  
-![ERD1]:https://imgur.com/HlkA5bB  
-![ERD2]:https://imgur.com/hQ7xF0u  
+Below are my previous ERDs so that you can see the progression of my application:   
 [Imgur](https://i.imgur.com/HlkA5bB.png)  
 [Imgur](https://i.imgur.com/hQ7xF0u.png)  
 
@@ -57,6 +54,9 @@ I completed my unit-tests using pytest and ran it both in my virtual machine and
 [Imgur](https://i.imgur.com/01hOs70.png)
 
 As you can see, I have an 82% test coverage and these tests include running of the application and valid submissions. Unfortunately, I am short of 100% coverage due to the fact I have not run tests on invalid submissions. For example, if I didn't input a name on the recipe form. Pytest is useful as it tells you which lines of code are not covered and so a future improvement will be for me to investigate these lines and implement tests for them.
+
+I also attempted to complete a full integration test however wasn't able to obtain all passes. Below is a screenshot to show pytest completing tests but only passing 2/3 tests run:  
+[Imgur](https://i.imgur.com/j4vOGN8.png)
 
 Below is a screenshot of my application runnning through Gunicorn on Jenkins:  
 [Imgur](https://i.imgur.com/sscnD5H.png)
