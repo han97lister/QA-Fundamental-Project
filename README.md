@@ -26,20 +26,20 @@ I decided to base my application on recipes as cooking is a big hobby of mine. I
 
 #### **Database Structure**
 My final entity relationship diagram (ERD) illustrates the tables within my application and their many-to-many relationships:  
-[Imgur](https://i.imgur.com/MWoI9Uz.png)  
+![erd][erd]  
 
 Below are my previous ERDs so that you can see the progression of my application:   
 ![erd1][erd1]
+![erd2][erd2] 
  
-[Imgur](https://i.imgur.com/hQ7xF0u.png)  
 
 #### **CI Pipeline**
 The CI Pipeline for my application:  
-[Imgur](https://i.imgur.com/Zr9RNNB.jpg)
+![CI_Pipeline][CI_Pipeline]
 
 ### **Project Tracking**
 I chose to track my project using Trello and have attached a snapshot below.  
-[Imgur](https://i.imgur.com/VmvJAbi.png)
+![Trello_Board][Trello_Board]
 
 I seperated my Trello board into five sections to clearly track my progress and I did this by having a to-do, doing and done section as well as a user story section in order to always have a clear vision of my application and finally a product backlog which contained the brief.
 
@@ -48,34 +48,34 @@ The risk assessment I completed can be found here:
 https://docs.google.com/spreadsheets/d/15U51YRdiurGMEHM5TBIvR6X54iHQVbD6h4-d2rWDp7Y/edit?usp=sharing
 
 I have also included a screenshot here:  
-[Imgur](https://i.imgur.com/jwd9J1z.png)
+![risk_assessment][risk_assessment]
 
 ### **Testing**
 I completed my unit-tests using pytest and ran it both in my virtual machine and through Gunicorn on Jenkins. These tests check that my application runs and the functions do what I'm expecting them too. Here is a screenshot of my test coverage:  
-[Imgur](https://i.imgur.com/01hOs70.png)
+![test_cov][test_cov]
 
 As you can see, I have an 82% test coverage and these tests include running of the application and valid submissions. Unfortunately, I am short of 100% coverage due to the fact I have not run tests on invalid submissions. For example, if I didn't input a name on the recipe form. Pytest is useful as it tells you which lines of code are not covered and so a future improvement will be for me to investigate these lines and implement tests for them.
 
 I also attempted to complete a full integration test however wasn't able to obtain all passes. Below is a screenshot to show pytest completing tests but only passing 2/3 tests run:  
-[Imgur](https://i.imgur.com/j4vOGN8.png)
+![test_int][test_int]
 
 Below is a screenshot of my application runnning through Gunicorn on Jenkins:  
-[Imgur](https://i.imgur.com/sscnD5H.png)
+![jenkins][jenkins]
 
 ### **Front-End Design**
 The front-end of the app is what the user sees and functions themself. I have included screenshots of how a user can navigate around my app, once it is running with the URL.
 
 Initially you are directed to the home page which includes a list of the recipes that have been added:  
-[Imgur](https://i.imgur.com/Ak3SQ7I.png)  
+![home][home] 
 Here is the form for inputting ingredients which redirects to a list of all ingredients in the database:  
-[Imgur](https://i.imgur.com/siMxzYS.png)  
-[Imgur](https://i.imgur.com/nevWUhf.png)  
+![addIn][addIn]  
+![allIn][allIn]
 Here is the method form where users can input the steps and time expected and once submitted are redirected to a different method page:  
-[Imgur](https://i.imgur.com/0VF53QK.png)  
-[Imgur](https://i.imgur.com/Aqz6sQx.png)  
+![addMethod][addMethod]  
+![allMethods][allMethods]  
 Here is where users can put together a recipe that calls on an ingredient from the database as well as a method:   
-[Imgur](https://i.imgur.com/tJGr4Dn.png)  
-[Imgur](https://i.imgur.com/6hRpe8E.png)  
+![recipe][recipe] 
+![edit_recipe][edit_recipe]  
 
 #### **Known Issues**
 There are a few problems with my current application:
@@ -99,4 +99,18 @@ Hannah Lister-Sims
 
 
 [erd1]:https://i.imgur.com/HlkA5bB.png
-
+[erd2]:https://i.imgur.com/hQ7xF0u.png
+[erd]:https://i.imgur.com/MWoI9Uz.png
+[CI_Pipeline]:https://i.imgur.com/Zr9RNNB.jpg
+[Trello_board]:https://i.imgur.com/VmvJAbi.png
+[risk_assessment]:https://i.imgur.com/jwd9J1z.png
+[test_cov]:https://i.imgur.com/01hOs70.png
+[test_int]:https://i.imgur.com/j4vOGN8.png
+[jenkins]:https://i.imgur.com/sscnD5H.png
+[home]:https://i.imgur.com/Ak3SQ7I.png
+[addIn]:https://i.imgur.com/siMxzYS.png
+[allIn]:https://i.imgur.com/nevWUhf.png
+[addMethod]:https://i.imgur.com/0VF53QK.png
+[allMethods]:https://i.imgur.com/Aqz6sQx.png
+[recipe]:https://i.imgur.com/tJGr4Dn.png
+[edit_recipe]:https://i.imgur.com/6hRpe8E.png
