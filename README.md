@@ -66,15 +66,15 @@ Below is a screenshot of my application runnning through Gunicorn on Jenkins:
 The front-end of the app is what the user sees and functions themself. I have included screenshots of how a user can navigate around my app, once it is running with the URL.
 
 Initially you are directed to the home page which includes a list of the recipes that have been added:  
-![home][home] 
+![home][home]  
 Here is the form for inputting ingredients which redirects to a list of all ingredients in the database:  
 ![addIn][addIn]  
-![allIn][allIn]
+![allIn][allIn]  
 Here is the method form where users can input the steps and time expected and once submitted are redirected to a different method page:  
 ![addMethod][addMethod]  
 ![allMethods][allMethods]  
 Here is where users can put together a recipe that calls on an ingredient from the database as well as a method:   
-![recipe][recipe] 
+![recipe][recipe]   
 ![edit_recipe][edit_recipe]  
 
 #### **Known Issues**
