@@ -8,16 +8,16 @@
 
 ### **Contents**
 * [Brief](#brief)
-* [My_Approach](#my-approach)
+* [My Approach](#my-approach)
 * [Architecture](#architecture)
-  * [Database_Structure](#database-structure)
-  * [CI_Pipeline](#ci-pipeline)
-* [Project_Tracking](#project-tracking)
-* [Risk_Assessment](#risk-assessment)
+  * [Database Structure](#database-structure)
+  * [CI Pipeline](#ci-pipeline)
+* [Project Tracking](#project-tracking)
+* [Risk Assessment](#risk-assessment)
 * [Testing](#testing)
-* [Front-end_Design](#front-end-design)
-  * [Known_Issues](#known-issues)
-* [Future_Improvements](#future-improvements)
+* [Front-end Design](#front-end-design)
+  * [Known Issues](#known-issues)
+* [Future Improvements](#future-improvements)
 * [Author](#author)
   
 
