@@ -26,9 +26,12 @@ I decided to base my application on recipes as cooking is a big hobby of mine. I
 
 #### **Database Structure**
 My final entity relationship diagram (ERD) illustrates the tables within my application and their many-to-many relationships:  
+[ERD]:https://imgur.com/q85KXTF
 [Imgur](https://i.imgur.com/MWoI9Uz.png)  
 
 Below are my previous ERDs so that you can see the progression of my application:  
+[ERD1]:https://imgur.com/HlkA5bB  
+[ERD2]:https://imgur.com/hQ7xF0u  
 [Imgur](https://i.imgur.com/HlkA5bB.png)  
 [Imgur](https://i.imgur.com/hQ7xF0u.png)  
 
