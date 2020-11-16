@@ -50,32 +50,37 @@ Below are my previous ERDs so that you can see the progression of my application
 
 #### **CI Pipeline**
 The CI Pipeline for my application:  
-![CI_Pipeline][CI_Pipeline]
+![CI_Pipeline][CI_Pipeline]  
+This pipeline clearly illustrates the usage I had in supporting tools, methodologies and technologies taught throughout the training.
 
 ### **Project Tracking**
 I chose to track my project using Trello and have attached a snapshot below.  
 ![Trello_Board][Trello_Board]
 
-I seperated my Trello board into five sections to clearly track my progress and I did this by having a to-do, doing and done section as well as a user story section in order to always have a clear vision of my application and finally a product backlog which contained the brief.
+I seperated my Trello board into five sections to clearly track my progress and I did this by having a to-do, doing and done section as well as a user story section in order to keep a clear vision of my application and finally a product backlog which contained the brief. I also labelled my tasks in order to fit with the mark scheme of this peoject. Therefore, green was for programming/software development, red for testing, orange for software design and yellow for systems integration and build.  I also labelled the user stories with purple and blue for the presentation. This gave me a simple visulisation for the whole project and it's goals and enabled me to quickly move from one task to another without worrying about forgetting anything. 
 
 ### **Risk Assessment**
 The risk assessment I completed can be found here:  
 https://docs.google.com/spreadsheets/d/15U51YRdiurGMEHM5TBIvR6X54iHQVbD6h4-d2rWDp7Y/edit?usp=sharing
 
 I have also included a screenshot here:  
-![risk_assessment][risk_assessment]
+![risk_assessment][risk_assessment]  
+This screenshot shows that the risks I have outlined are mostly low impact which is positive but also reassuring to know that I have methodologies thought and planned out in case this risks became a reality. Risk assessments should always be on-going as add an application develops, so will the risks and room for error. 
 
 ### **Testing**
 I completed my unit-tests using pytest and ran it both in my virtual machine and through Gunicorn on Jenkins. These tests check that my application runs and the functions do what I'm expecting them too. Here is a screenshot of my test coverage:  
 ![test_cov][test_cov]
 
-As you can see, I have an 82% test coverage and these tests include running of the application and valid submissions. Unfortunately, I am short of 100% coverage due to the fact I have not run tests on invalid submissions. For example, if I didn't input a name on the recipe form. Pytest is useful as it tells you which lines of code are not covered and so a future improvement will be for me to investigate these lines and implement tests for them.
+As you can see, I have an 82% test coverage and these tests include running of the application and valid submissions. Unfortunately, I am short of 100% coverage due to the fact I have not run  successful tests on invalid submissions. For example, if I didn't input a name on the recipe form. Pytest is useful as it tells you which lines of code are not accounted for and so a future improvement will be for me to investigate these lines and implement successful tests for them.
 
-I also attempted to complete a full integration test however wasn't able to obtain all passes. Below is a screenshot to show pytest completing tests but only passing 2/3 tests run:  
-![test_int][test_int]
+I also attempted to complete a full integration test however wasn't able to obtain all passes. Below is a screenshot to show pytest completing tests in my integration test file but only passing 2/3 tests that were run:  
+![test_int][test_int]  
+
+It's good to use both unit-testing and integration testing as it allows you to prevent otherwise future problems. The balance of both means you've not only tested that your app does what you're expecting it to, but also that the user will have the same experience.
 
 Below is a screenshot of my application runnning through Gunicorn on Jenkins:  
-![jenkins][jenkins]
+![jenkins][jenkins]  
+Jenkins allows my app to run in the background giving more freedom when making changes as it doesn’t prevent the app from working like a virtual machine would. Jenkins is widely used as it is easily set up and configured as well as being free to download.
 
 ### **Front-End Design**
 The front-end of the app is what the user sees and functions themself. I have included screenshots of how a user can navigate around my app, once it is running with the URL.
