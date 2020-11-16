@@ -29,7 +29,8 @@ My final entity relationship diagram (ERD) illustrates the tables within my appl
 [Imgur](https://i.imgur.com/MWoI9Uz.png)  
 
 Below are my previous ERDs so that you can see the progression of my application:   
-[Imgur](https://i.imgur.com/HlkA5bB.png)  
+![erd1][erd1]
+ 
 [Imgur](https://i.imgur.com/hQ7xF0u.png)  
 
 #### **CI Pipeline**
@@ -97,5 +98,5 @@ There are a number of improvements I would like to implement:
 Hannah Lister-Sims
 
 
-
+[erd1]:https://i.imgur.com/HlkA5bB.png
 
