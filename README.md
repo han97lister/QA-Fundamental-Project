@@ -10,8 +10,16 @@
 * [Brief](#brief)
 * [My_Approach](#my-approach)
 * [Architecture](#architecture)
- * [Database_Structure](#database-structure)
- * [CI_Pipeline](#ci-pipeline)
+  * [Database_Structure](#database-structure)
+  * [CI_Pipeline](#ci-pipeline)
+* [Project_Tracking](#project-tracking)
+* [Risk_Assessment](#risk-assessment)
+* [Testing](#testing)
+* [Front-end_Design](#front-end-design)
+  * [Known_Issues](#known-issues)
+* [Future_Improvements](#future-improvements)
+* [Author](#author)
+  
 
 ### **Brief**
 For this project, I had the objective of creating a web application that can create, read, update and delete (CRUD) as well as implement other methodologies learnt throughout the training. Some of these include a Trello Board, a relation database, clear design phases illustrating the architecture and a CI Pipeline.
