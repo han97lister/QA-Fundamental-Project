@@ -80,12 +80,13 @@ Here is where users can put together a recipe that calls on an ingredient from t
 There are a few problems with my current application:
 
 * When the user inputs a recipe, they are only able to select one ingredient which is problematic when trying to follow. However, the method does include all of the ingredients but ideally you could clearly see a list of them.
-* My integration test isn't passing so would like that working and passing in order to confirm my application is working as a whole.
+* My integration test is not currently passing in all areas so I would like that working and passing in order to confirm my application is working as a whole.
 
 ### **Future Improvements**
 There are a number of improvements I would like to implement:
 
 * Fix the issue mentioned previously.
+* Obtain a fully successful integration test.
 * Allow people to specify cuisines so that users can get more information about a recipe they may not have seen before.
 * Implement the option to include an image so that users can visulise the food.
 * Improve the general look of my application with some colour.
